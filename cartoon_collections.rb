@@ -20,9 +20,10 @@ end
 long_planeteer_calls(planeteer_calls)
   # Your code here
 
-
+pci = ["umbrella", "spinach", "cheddar", "helicopter"]
 def find_the_cheese(pci)
-  
-  # the array below is here to help
   cheese_types = ["cheddar", "gouda", "camembert"]
+  pci.find do |maybe_cheese|
+    cheese_types.include?(maybe_cheese)
+  end
 end
